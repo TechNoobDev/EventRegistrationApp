@@ -1,0 +1,3 @@
+﻿ALTER TABLE tbEvents
+ADD Description NVARCHAR(500) NULL,
+    Location NVARCHAR(100) NULL;
