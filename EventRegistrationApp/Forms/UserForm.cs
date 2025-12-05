@@ -8,9 +8,12 @@ namespace EventRegistrationApp.Forms
 {
     public partial class UserForm : Form
     {
+        private bool isPasswordVisible = false;
+
         public UserForm()
         {
             InitializeComponent();
+            textBox_password.UseSystemPasswordChar = true; // 🔒 Make password hidden
         }
 
         private void UserForm_Load(object sender, EventArgs e)
@@ -51,9 +54,27 @@ namespace EventRegistrationApp.Forms
 
         private void button_register_Click(object sender, EventArgs e)
         {
-            // Open registration form
+
             RegistrationForm registrationForm = new RegistrationForm();
             registrationForm.Show();
+        }
+
+        private void label_showPassword_Click(object sender, EventArgs e)
+        {
+            if (isPasswordVisible)
+            {
+               
+                textBox_password.UseSystemPasswordChar = true;
+                label_showPassword.Text = "Show";
+                isPasswordVisible = false;
+            }
+            else
+            {
+               
+                textBox_password.UseSystemPasswordChar = false;
+                label_showPassword.Text = "Hide";
+                isPasswordVisible = true;
+            }
         }
     }
 }

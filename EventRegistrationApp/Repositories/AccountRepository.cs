@@ -35,11 +35,14 @@ namespace EventRegistrationApp.Repositories
             {
                 cmd.Parameters.AddWithValue("@Username", username);
                 conn.Open();
+
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
                     {
                         string storedHash = reader["PasswordHash"].ToString();
+
+                        // Compare stored hash with user input
                         if (HashHelper.VerifyHash(password, storedHash))
                         {
                             return new Account
@@ -54,6 +57,7 @@ namespace EventRegistrationApp.Repositories
                     }
                 }
             }
+
             return null;
         }
     }

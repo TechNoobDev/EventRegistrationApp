@@ -130,7 +130,7 @@
             this.button_downloadParticipants.Name = "button_downloadParticipants";
             this.button_downloadParticipants.Size = new System.Drawing.Size(217, 44);
             this.button_downloadParticipants.TabIndex = 10;
-            this.button_downloadParticipants.Text = "Download";
+            this.button_downloadParticipants.Text = "Download(CV)";
             this.button_downloadParticipants.UseVisualStyleBackColor = true;
             this.button_downloadParticipants.Click += new System.EventHandler(this.button_downloadParticipants_Click);
             // 
