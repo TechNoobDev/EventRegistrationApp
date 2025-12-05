@@ -1,7 +1,9 @@
-﻿CREATE TABLE tbAccounts (
-    AccountId INT IDENTITY(1,1) PRIMARY KEY,
-    Username NVARCHAR(50) NOT NULL UNIQUE,
-    PasswordHash NVARCHAR(MAX) NOT NULL,
-    CreatedAt DATETIME NOT NULL DEFAULT GETDATE(),
-    IsActive BIT NOT NULL DEFAULT 1
+﻿CREATE TABLE [dbo].[tbRegistrations] (
+    [RegistrationId]   INT           IDENTITY (1, 1) NOT NULL,
+    [UserId]           INT           NOT NULL,
+    [EventId]          INT           NOT NULL,
+    [RegistrationDate] DATETIME      DEFAULT (getdate()) NOT NULL,
+    [Status]           NVARCHAR (20) DEFAULT ('Pending') NOT NULL,
+    PRIMARY KEY CLUSTERED ([RegistrationId] ASC),
+    FOREIGN KEY ([UserId]) REFERENCES [dbo].[tbUsers] ([UserId])
 );

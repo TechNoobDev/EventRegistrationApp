@@ -1,1 +1,1 @@
-﻿select * from tbEvents
+﻿create database dbEventRegistration;

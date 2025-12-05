@@ -52,10 +52,10 @@
             this.textBox_middleName.Size = new System.Drawing.Size(213, 22);
             this.textBox_middleName.TabIndex = 1;
             // 
-            // textBox_LastName
+            // textBox_lastName
             // 
             this.textBox_lastName.Location = new System.Drawing.Point(91, 155);
-            this.textBox_lastName.Name = "textBox_LastName";
+            this.textBox_lastName.Name = "textBox_lastName";
             this.textBox_lastName.Size = new System.Drawing.Size(213, 22);
             this.textBox_lastName.TabIndex = 2;
             // 
@@ -65,7 +65,6 @@
             this.textBox_yearLevel.Name = "textBox_yearLevel";
             this.textBox_yearLevel.Size = new System.Drawing.Size(213, 22);
             this.textBox_yearLevel.TabIndex = 3;
-            //this.textBox_yearLevel.TextChanged += new System.EventHandler(this.textBox_yearLevel_TextChanged);
             // 
             // textBox_section
             // 
@@ -102,6 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(384, 618);
             this.Controls.Add(this.button_submitRegistration);
             this.Controls.Add(this.textBox_school);
