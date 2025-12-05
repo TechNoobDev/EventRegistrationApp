@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_password = new System.Windows.Forms.TextBox();
@@ -41,7 +42,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(282, 120);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(293, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 11;
@@ -50,7 +53,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(282, 39);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(293, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 10;
@@ -58,7 +63,7 @@
             // 
             // textBox_password
             // 
-            this.textBox_password.Location = new System.Drawing.Point(282, 137);
+            this.textBox_password.Location = new System.Drawing.Point(293, 129);
             this.textBox_password.Multiline = true;
             this.textBox_password.Name = "textBox_password";
             this.textBox_password.Size = new System.Drawing.Size(234, 42);
@@ -66,7 +71,7 @@
             // 
             // textBox_username
             // 
-            this.textBox_username.Location = new System.Drawing.Point(282, 58);
+            this.textBox_username.Location = new System.Drawing.Point(293, 50);
             this.textBox_username.Multiline = true;
             this.textBox_username.Name = "textBox_username";
             this.textBox_username.Size = new System.Drawing.Size(234, 42);
@@ -74,7 +79,7 @@
             // 
             // button_register
             // 
-            this.button_register.Location = new System.Drawing.Point(279, 284);
+            this.button_register.Location = new System.Drawing.Point(290, 276);
             this.button_register.Name = "button_register";
             this.button_register.Size = new System.Drawing.Size(234, 50);
             this.button_register.TabIndex = 7;
@@ -85,7 +90,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(282, 198);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(293, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 16);
             this.label3.TabIndex = 13;
@@ -93,7 +100,7 @@
             // 
             // textBox_confirmPassword
             // 
-            this.textBox_confirmPassword.Location = new System.Drawing.Point(282, 215);
+            this.textBox_confirmPassword.Location = new System.Drawing.Point(293, 207);
             this.textBox_confirmPassword.Multiline = true;
             this.textBox_confirmPassword.Name = "textBox_confirmPassword";
             this.textBox_confirmPassword.Size = new System.Drawing.Size(234, 42);
@@ -101,7 +108,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(282, 352);
+            this.button1.Location = new System.Drawing.Point(290, 344);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(234, 50);
             this.button1.TabIndex = 14;
@@ -112,7 +119,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(814, 415);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox_confirmPassword);
