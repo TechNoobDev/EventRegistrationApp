@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.button_userForm = new System.Windows.Forms.Button();
             this.button_adminForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_userForm
             // 
-            this.button_userForm.Location = new System.Drawing.Point(171, 31);
+            this.button_userForm.Location = new System.Drawing.Point(174, 55);
             this.button_userForm.Name = "button_userForm";
-            this.button_userForm.Size = new System.Drawing.Size(192, 58);
+            this.button_userForm.Size = new System.Drawing.Size(207, 58);
             this.button_userForm.TabIndex = 0;
             this.button_userForm.Text = "User";
             this.button_userForm.UseVisualStyleBackColor = true;
@@ -44,9 +45,9 @@
             // 
             // button_adminForm
             // 
-            this.button_adminForm.Location = new System.Drawing.Point(171, 108);
+            this.button_adminForm.Location = new System.Drawing.Point(174, 139);
             this.button_adminForm.Name = "button_adminForm";
-            this.button_adminForm.Size = new System.Drawing.Size(192, 58);
+            this.button_adminForm.Size = new System.Drawing.Size(207, 58);
             this.button_adminForm.TabIndex = 1;
             this.button_adminForm.Text = "Admin";
             this.button_adminForm.UseVisualStyleBackColor = true;
@@ -56,11 +57,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 216);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(562, 263);
             this.Controls.Add(this.button_adminForm);
             this.Controls.Add(this.button_userForm);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "LoginForm";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

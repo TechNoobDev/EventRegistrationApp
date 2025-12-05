@@ -22,5 +22,10 @@ namespace EventRegistrationApp.Forms
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
         }
+
+        private void HomeForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
