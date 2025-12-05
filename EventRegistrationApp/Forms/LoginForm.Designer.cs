@@ -35,6 +35,7 @@
             // 
             // button_userForm
             // 
+            this.button_userForm.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_userForm.Location = new System.Drawing.Point(174, 55);
             this.button_userForm.Name = "button_userForm";
             this.button_userForm.Size = new System.Drawing.Size(207, 58);
@@ -45,6 +46,7 @@
             // 
             // button_adminForm
             // 
+            this.button_adminForm.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_adminForm.Location = new System.Drawing.Point(174, 139);
             this.button_adminForm.Name = "button_adminForm";
             this.button_adminForm.Size = new System.Drawing.Size(207, 58);
