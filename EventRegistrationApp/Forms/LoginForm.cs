@@ -30,8 +30,8 @@ namespace EventRegistrationApp.Forms
 
         private void button_adminForm_Click(object sender, EventArgs e)
         {
-            AdminForm adminForm = new AdminForm();
-            adminForm.Show();
+            AdminLogin adminLogin = new AdminLogin();
+            adminLogin.Show();
         }
     }
 }
